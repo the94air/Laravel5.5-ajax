@@ -13,9 +13,9 @@
 			}
 		});
 	</script>
-	<link rel="stylesheet" type="text/css" href="{{ Helpers::publicAsset('css/app.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ Helpers::publicAsset('css/font-awesome.min.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ Helpers::publicAsset('css/animate.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/app2.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 
 </head>
 <body>
@@ -24,14 +24,14 @@
 		@yield('body')
 	</main>
 
-	<script src="{{ Helpers::publicAsset('js/jquery.min.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/bootstrap-notify.min.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/refresh.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/store.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/edit.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/update.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/show.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/destroy.js') }}"></script>
-	<script src="{{ Helpers::publicAsset('js/app.js') }}"></script>
+	<script src="{{ asset('js/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/bootstrap-notify.min.js') }}"></script>
+	<script src="{{ asset('js/refresh.js') }}"></script>
+	<script src="{{ asset('js/store.js') }}"></script>
+	<script src="{{ asset('js/edit.js') }}"></script>
+	<script src="{{ asset('js/update.js') }}"></script>
+	<script src="{{ asset('js/show.js') }}"></script>
+	<script src="{{ asset('js/destroy.js') }}"></script>
+	<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

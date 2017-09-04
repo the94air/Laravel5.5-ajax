@@ -107,7 +107,9 @@
 					</div>
 					<div class="modal-body" id="view-data">
 						<strong id="view-title">Title</strong>
+						<p id="title-display"></p>
 						<br><strong id="view-item">Item body</strong>
+						<p id="item-display"></p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -116,7 +118,7 @@
 			</div>
 		</div>
 
-				<!-- Destroy item modal -->
+		<!-- Destroy item modal -->
 		<div class="modal fade" id="destroy-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">

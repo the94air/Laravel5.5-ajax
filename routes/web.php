@@ -15,8 +15,10 @@ Route::resource('lists', 'ListsController', ['except' => ['create']]);
 
 Route::get('table', 'ListsController@getTable');
 
-Route::get('/', function () {
-    return redirect()->route('lists.index');
-});
+// Route::get('/', function () {
+//     return redirect()->route('lists.index');
+// });
+
+Route::redirect('/', '/lists', 301);
 
 //Auth::routes();

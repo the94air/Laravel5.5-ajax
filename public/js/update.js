@@ -86,7 +86,7 @@ jQuery(document).ready(function($)  {
 					// refresh data
 					refreshTable();
 		    }, error :function(data) {
-		        $errors = data.responseJSON;
+		        $errors = data.responseJSON.errors;
 				var id = '';
 				for (var i in $errors) {
 				id += "update-" + i;

@@ -75,7 +75,8 @@ jQuery(document).ready(function($)  {
 					// refresh data
 					refreshTable();
 		    }, error :function(data) {
-		        $errors = data.responseJSON;
+		        $errors = data.responseJSON.errors;
+		        console.log($errors);
 				var id = '';
 				for (var i in $errors) {
 				id += "store-" + i;

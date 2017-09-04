@@ -1,7 +1,7 @@
 jQuery(document).ready(function($)  {
 	$('#show-item').on('hidden.bs.modal', function () {
-		$('.title').remove();
-		$('.item').remove();
+		$('#title-display').text('');
+		$('#item-display').text('');
 		$('#item-not-found').remove();
 		$('#show-loading-bar').show();
 	});
@@ -14,18 +14,18 @@ jQuery(document).ready(function($)  {
 			headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
 			beforeSend: function() {
 			$('#item-not-found').remove();
-			$('.title').remove();
-			$('.item').remove();
+			$('#title-display').text('');
+			$('#item-display').text('');
 			$('#view-data').hide();
 			},
 		    success: function (data) {
 		    	(function(){
-				var title = $('<p class="title">' + data['title'] +'</p>');
-				title.insertAfter('#view-title');
+					var title = data['title'];
+					$('#title-display').text(title);
 				})();
 		    	(function(){
-				var item = $('<p class="item">' + data['item'] +'</p>');
-				item.insertAfter('#view-item');
+					var item = data['item'];
+					$('#item-display').text(item);
 				})();
 				$('#view-data').show();
 			},
