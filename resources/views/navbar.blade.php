@@ -1,5 +1,5 @@
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
 
@@ -43,6 +43,10 @@
                         </li>
                     </ul>
                     @endif
+                    <ul class="nav navbar-nav navbar-right" style="
+    background: #fff;">
+                        <li><a href="https://github.com/the94air/Laravel-ajax" target="_blank">Fork me on GitHub</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>

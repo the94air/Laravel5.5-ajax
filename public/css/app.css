@@ -6748,7 +6748,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #def3ff;
+  background-color: rgba(121, 85, 72, 0.15);
 }
 .btn-logout {
   width: 100%;
