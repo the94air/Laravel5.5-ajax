@@ -9,7 +9,7 @@
 	<script>
 		WebFont.load({
 			google: {
-				families: ['Kalam', 'Acme']
+				families: ['Open Sans:800', 'Nunito:600']
 			}
 		});
 	</script>

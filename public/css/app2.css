@@ -6744,11 +6744,12 @@ button.close {
 
 body {
   margin: 0;
-  font-family: 'Kalam';
+  font-family: 'Nunito';
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
   background-color: rgba(121, 85, 72, 0.15);
+  font-weight: 600 !important;
 }
 .btn-logout {
   width: 100%;
@@ -6768,7 +6769,7 @@ hr {
   font-size: 30px;
 }
 h1{
-  font-family: 'Acme';
+  font-family: 'Open Sans';
 }
 .btn-sm {
   padding: 0 !important;
