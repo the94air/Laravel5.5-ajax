@@ -16,7 +16,7 @@ Class Helpers extends UrlGenerator
      */
     public static function publicAsset($path)
     {
-        return asset('public/'.$path);
+        return asset($path);
     }
 
         /**
@@ -27,7 +27,7 @@ Class Helpers extends UrlGenerator
      */
     public static function publicSecureAsset($path)
     {
-        return secure_asset('public/'.$path, true);
+        return secure_asset($path, true);
     }
 
 }
